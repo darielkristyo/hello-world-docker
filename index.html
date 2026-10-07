@@ -1,35 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Saya</title>
+
+    <title>Dariel Kristyo | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Nama Kamu</h1>
-    <p>Dariel Kristyo</p>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">DK.</a>
 
-    <h2>About Me</h2>
-    <p>
-        Saya adalah mahasiswa Computer Science yang tertarik
-        pada web development dan software development.
-    </p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <h2>Skills</h2>
-    <p>HTML, CSS, PHP, Laravel, C++, Python, MySQL</p>
 
-    <h2>Projects</h2>
-    <h3>Library Management System</h3>
-    <p>
-        Sistem manajemen perpustakaan yang dibuat menggunakan
-        Laravel dan MySQL.
-    </p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
 
-    <h2>Contact</h2>
-    <p>Email: darielkristyo08@gmail.com</p>
+        <div class="hero-content">
+
+            <p class="greeting">Hello, I'm</p>
+
+            <h1>Dariel <span>Kristyo</span></h1>
+
+            <h2>Computer Science Student</h2>
+
+            <p class="hero-description">
+                Passionate about software development, web technologies,
+                cloud computing, and building useful digital solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#skills" class="btn primary-btn">
+                    View My Skills
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="profile-circle">
+                DK
+            </div>
+
+            <h3>Dariel Kristyo</h3>
+
+            <p>Computer Science</p>
+
+            <div class="status">
+                <span></span>
+                Available for opportunities
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>ABOUT ME</p>
+            <h2>Professional Summary</h2>
+        </div>
+
+        <div class="about-card">
+
+            <p>
+                Computer Science student at BINUS University with an interest
+                in software development and web technologies. Familiar with
+                programming, web development, version control, containerization,
+                and cloud computing.
+            </p>
+
+            <p>
+                Interested in building practical and efficient applications
+                while continuously improving technical and problem-solving skills.
+                I enjoy learning new technologies and applying them to real-world
+                projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+
+        <div class="section-title">
+            <p>EDUCATION</p>
+            <h2>My Education</h2>
+        </div>
+
+        <div class="education-card">
+
+            <div class="education-icon">
+                🎓
+            </div>
+
+            <div class="education-content">
+
+                <span class="education-year">
+                    Undergraduate
+                </span>
+
+                <h3>BINUS University</h3>
+
+                <p>
+                    Computer Science
+                </p>
+
+                <small>
+                    Bachelor of Computer Science
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+
+        <div class="section-title">
+            <p>TECHNICAL SKILLS</p>
+            <h2>What I Work With</h2>
+        </div>
+
+
+        <div class="skills-grid">
+
+            <!-- Programming -->
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h3>Programming Language</h3>
+
+                <div class="skill-list">
+                    <span>Java</span>
+                    <span>C++</span>
+                    <span>PHP</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+
+            <!-- Web Development -->
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    🌐
+                </div>
+
+                <h3>Web Development</h3>
+
+                <div class="skill-list">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Laravel</span>
+                    <span>Vue.js</span>
+                </div>
+
+            </div>
+
+
+            <!-- Tools -->
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    ⚙
+                </div>
+
+                <h3>Tools</h3>
+
+                <div class="skill-list">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Docker</span>
+                    <span>Linux</span>
+                </div>
+
+            </div>
+
+
+            <!-- Cloud -->
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    ☁
+                </div>
+
+                <h3>Cloud Computing</h3>
+
+                <div class="skill-list">
+                    <span>Google Cloud Platform</span>
+                    <span>GCP</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="section">
+
+        <div class="section-title">
+            <p>PROJECTS</p>
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-number">
+                01
+            </div>
+
+            <div>
+
+                <h3>Library Management System</h3>
+
+                <p>
+                    A web-based library management system developed using
+                    Laravel and modern web development technologies.
+                </p>
+
+                <div class="project-tech">
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>GitHub</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <div>
+
+                <h3>Web Development Project</h3>
+
+                <p>
+                    A web development project focusing on responsive design,
+                    user interface, and practical web functionality.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+
+        <div class="section-title">
+            <p>CONTACT</p>
+            <h2>Let's Connect</h2>
+        </div>
+
+        <p class="contact-text">
+            Interested in connecting or discussing a project?
+            Feel free to reach out.
+        </p>
+
+        <a href="mailto:your-email@example.com" class="btn primary-btn">
+            Send Me an Email
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Dariel Kristyo. All Rights Reserved.
+        </p>
+
+        <p>
+            Built with HTML & CSS
+        </p>
+
+    </footer>
+
 
 </body>
 </html>
